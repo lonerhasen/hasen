@@ -1,0 +1,7 @@
+Xh, Yh = map(int, input().split())
+Xp, Yp = map(int, input().split())
+
+if Xh == Xp or Yh == Yp:
+    print(1)
+else:
+    print(2)
