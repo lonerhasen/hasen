@@ -1,0 +1,4 @@
+A,I = map(int, input().split())
+scientists = A*(I-1) +1
+
+print(scientists)
