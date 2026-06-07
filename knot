@@ -1,0 +1,9 @@
+n = int(input())
+
+needed = input().split()
+learned = input().split()
+
+for knot in needed:
+    if knot not in learned:
+        print(knot)
+        break
