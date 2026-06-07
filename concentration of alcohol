@@ -1,0 +1,22 @@
+n, m = map(int, input().split())
+
+alcohol1 = 0
+volume1 = 0
+
+for _ in range(n):
+    a, c = map(int, input().split())
+    alcohol1 += a * c
+    volume1 += a
+
+alcohol2 = 0
+volume2 = 0
+
+for _ in range(m):
+    a, c = map(int, input().split())
+    alcohol2 += a * c
+    volume2 += a
+
+if alcohol1 * volume2 == alcohol2 * volume1:
+    print("same")
+else:
+    print("different")
