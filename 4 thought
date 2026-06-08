@@ -1,0 +1,23 @@
+ops = ['+', '-', '*', '/']
+
+exprs = {}
+
+for op1 in ops:
+    for op2 in ops:
+        for op3 in ops:
+            expr = f"4 {op1} 4 {op2} 4 {op3} 4"
+
+           
+            value = eval(expr.replace('/', '//'))
+
+            exprs[value] = expr
+
+n = int(input())
+
+for _ in range(n):
+    target = int(input())
+
+    if target in exprs:
+        print(f"{exprs[target]} = {target}")
+    else:
+        print("no solution")
